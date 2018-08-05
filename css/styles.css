@@ -106,7 +106,7 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
+  height: auto;
   background-color: #3397DB;
   align-items: center;
 }
@@ -205,7 +205,7 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 50%;
+  width: 100%;
 }
 #restaurant-name {
   color: #f18200;
@@ -272,4 +272,46 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+.container {
+  justify-content: space-between;
+}
+
+#restaurants-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 599px) {
+  .inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+  }
+  .inside header {
+    position: relative;
+  }
+  .inside #restaurant-container, #reviews-container, #restaurant-cuisine {
+    width: 100%;
+    padding: 0px;
+  }
+  .inside #map-container {
+    position: relative;
+    height: 200px;
+    width: 100%;
+  }
+  .inside #restaurant-img {
+    width: 100%;
+    height: auto;
+  }
+  .inside #footer {
+    position: relative;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .inside #restaurant-container, #reviews-container, #restaurant-cuisine {
+    width: 50%;
+    padding: 0px;
+  }
 }

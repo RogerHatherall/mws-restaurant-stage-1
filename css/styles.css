@@ -18,7 +18,7 @@ ul, li {
 	color: #333;
 }
 a {
-	color: orange;
+	color: black;
 	text-decoration: none;
 }
 a:hover, a:focus {
@@ -40,8 +40,8 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   min-height: 100%;
 }
 #footer {
-  background-color: #444;
-  color: #aaa;
+  background-color: #3397DB;
+  color: black;
   font-size: 8pt;
   letter-spacing: 1px;
   padding: 25px;
@@ -52,14 +52,14 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 nav {
   width: 100%;
   height: 80px;
-  background-color: #252831;
+  background-color: #3397DB;
   text-align:center;
 }
 nav h1 {
   margin: auto;
 }
 nav h1 a {
-  color: #fff;
+  color: black;
   font-size: 14pt;
   font-weight: 200;
   letter-spacing: 10px;
@@ -111,7 +111,7 @@ nav h1 a {
   align-items: center;
 }
 .filter-options h2 {
-  color: white;
+  color: black;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1;
@@ -156,7 +156,7 @@ nav h1 a {
   min-width: 100%;
 }
 #restaurants-list li h1 {
-  color: #f18200;
+  color: black;
   font-family: Arial,sans-serif;
   font-size: 14pt;
   font-weight: 200;
@@ -172,7 +172,7 @@ nav h1 a {
 #restaurants-list li a {
   background-color: orange;
   border-bottom: 3px solid #eee;
-  color: #fff;
+  color: black;
   display: inline-block;
   font-size: 10pt;
   margin: 15px 0 0;
@@ -246,7 +246,7 @@ nav h1 a {
   padding: 30px 40px 80px;
 }
 #reviews-container h2 {
-  color: #f58500;
+  color: black;
   font-size: 24pt;
   font-weight: 300;
   letter-spacing: -1px;

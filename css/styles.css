@@ -71,7 +71,6 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
 }
 
 /* Display list items side by side */
@@ -204,8 +203,7 @@ nav h1 a {
 }
 .inside #footer {
   bottom: 0;
-  position: absolute;
-  width: 100%;
+  position: relative;
 }
 #restaurant-name {
   color: #f18200;
@@ -303,10 +301,6 @@ nav h1 a {
   .inside #restaurant-img {
     width: 100%;
     height: auto;
-  }
-  .inside #footer {
-    position: relative;
-    width: 100%;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 999px) {

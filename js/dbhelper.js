@@ -176,6 +176,17 @@ class DBHelper {
     );
     return marker;
   } */
-
 }
+  /* Set up  a new service worker */
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+  .register('../sw.js')
+    .then(reg => {
+      console.log('Service Worker Registration Successful: ' + reg.scope);
+    })
+    .catch(error => {
+      console.log('Service Worker Registration Failed: ' + error);
+    });
+}
+
 

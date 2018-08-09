@@ -25,7 +25,7 @@ self.addEventListener("install", function(event) {
       '/img/8.jpg',
       '/img/9.jpg',
       '/img/10.jpg',
-      '/js/sw.js',
+      '/sw.js',
       '/data/restaurants.json'
       ])
     .catch(error => {
@@ -34,10 +34,7 @@ self.addEventListener("install", function(event) {
   }));
 });
 
-/*This is based on the code shown in the study jam
-and it's supposed to delete old cached files but I've never seen
-it delete any.  I'm assuming this is because this app already has all
-the pages it's going to see and never gets any new ones */
+
 self.addEventListener('activate', function (event) {
   //console.log('Activating new service worker.');
   event.waitUntil(
@@ -64,3 +61,4 @@ self.addEventListener('fetch', event => {
     .catch(error => console.log(error, event.request))
   );
 });
+

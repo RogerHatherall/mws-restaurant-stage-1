@@ -165,8 +165,10 @@ createRestaurantHTML = (restaurant) => {
   image.alt = "Photo of " + restaurant.name;
   li.append(image);
 
-  const name = document.createElement('h1');
+  //final changes: h1 becomes h2
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
+  name.setAttribute("tabIndex", "0");
   li.append(name);
 
   const neighborhood = document.createElement('p');
@@ -180,6 +182,9 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
+  //final changes: added to create aria label for button
+  more.setAttribute('role', 'button');
+  more.setAttribute('aria-label', `view more details for ${restaurant.name}`);
   li.append(more)
 
   return li

@@ -294,7 +294,7 @@ nav h1 a {
     padding: 0px;
   }
   .inside #map-container {
-    position: relative;
+    position: inherit;
     height: 200px;
     width: 100%;
   }
